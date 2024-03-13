@@ -1,0 +1,1508 @@
+<html>
+
+<head>
+  <title>
+    Nest - Multipurpose eCommerce
+  </title>
+  <link rel="stylesheet" href="./assests/css/styles-1.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+  <style>
+    *{padding:0;margin:0;box-sizing:border-box;}
+.wraper{width:100%; height:100vh; display:flex; align-items:center; padding:40px; background:#000;} 
+.owl-theme img{width:100%;min-height:200px;}
+.owl-carousel .owl-prev, .owl-carousel .owl-next{position:absolute; top:40%; transform:translateY(-50%); background-color:#fff !important; color:#000 !important; font-size:1.5em !important; width:40px; height:40px; border-radius:100% !important; font-weight:bold; padding:15px !important; text-align:center; box-shadow:0px 0px 10px 0px #000;}
+.owl-carousel .owl-prev:hover, .owl-carousel .owl-next:hover{box-shadow:0px 0px 0px 0px #000; background-color:#3BB77E !important; color:#fff !important;}
+.owl-carousel .owl-prev{left:-30px;}
+.owl-carousel .owl-next{right:-30px;}
+.owl-theme .owl-dots .owl-dot.active span{background:#3BB77E !important; width:25px; transition:0.2s ease-in-out;}
+.owl-theme .owl-dots .owl-dot:hover span{background:#3BB77E !important; transition:0.2s ease-in-out;}
+
+
+/* Responsive design custom css */
+@media only screen and (max-width:480px){
+  .owl-theme .owl-dots .owl-dot{display:none;}
+  .owl-carousel .owl-prev, .owl-carousel .owl-next{width:30px; height:30px; font-size:14px !important; top:45%; box-shadow:0px 0px 0px 0px #000;}
+  .owl-carousel .owl-prev{left:0px;}
+.owl-carousel .owl-next{right:0px;}
+}
+body {
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="banner_section">
+    <div class="header">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col col-xs-12 col-sm-6 col-md-2">
+            <div class="box">
+              <div class="img">
+                <img class="mylogo" src="./assests/images/nest logo.png" alt="SD">
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-xs-12 col-sm-6 col-md-6">
+            <div class="box">
+              <div class="card">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle category-bar" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    ALL Categories
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+                <button class="search-bar">
+                  search for items
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm col-md-1">
+            <div class="box">
+              <div class="icon">
+                compare
+              </div>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm col-md-1">
+            <div class="box">
+              <div class="icon">
+                whislist
+              </div>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm col-md-1">
+            <div class="box">
+              <div class="icon">
+                cart
+              </div>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm col-md-1">
+            <div class="box">
+              <div class="icon">
+                Account
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-sub">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-xs-12 col-sm-12 col-md-2">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle browse-category" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                ALL Categories
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm-12 col-md-1 menu">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle browse" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Home
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm-12 col-md-1 menu">
+            <button class="browse">
+              About
+            </button>
+          </div>
+          <div class="col col-xs-12 col-sm-12 col-md-1 menu">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle browse" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Shop
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm-12 col-md-1 menu">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle browse" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Vendors
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm-12 col-md-1 menu">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle browse" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Mega menu
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm-12 col-md-1 menu">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle browse" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Blog
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm-12 col-md-1 menu">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle browse" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Pages
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm-12 col-md-1 menu">
+            <button class="browse">
+              Contact
+            </button>
+          </div>
+          <div class="col col-xs-12 col-sm-12 col-md">
+            <div class="contact">
+              <span class="num">
+                1900 - 888
+              </span>
+              <span>
+                24/7 Support centre
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-info">
+      <div class="container-fluid">
+        <div class="row carosel">
+          <div class="col col-xs-12 col-sm-8">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" tabindex="0">
+                  <img src="./assests/images/slider-3.png" class="d-block w-100" alt="...">
+                  <span class="text">
+                    Pure Coffee <br>
+                    Big Discount</br>
+                  </span>
+                  <span class="text-1">
+                    Save upto 50% off on your first order
+                  </span>
+                  <form class="form-subcriber d-flex mail">
+                    <input class="email" type="email" placeholder="Your emaill address" tabindex="0">
+                    <img src="./assests/images/icon-plane.png" class="icon">
+                    <button class="btn" type="submit" tabindex="0">Subscribe</button>
+                  </form>
+                </div>
+                <div class="carousel-item" tabindex="-1">
+                  <img src="./assests/images/slider-4.png" class="d-block w-100" alt="...">
+                  <span class="text">
+                    Snacks Box <br>
+                    daily save</br>
+                  </span>
+                  <span class="text-1">
+                    Sign up for the daily newsletter
+                  </span>
+                  <form class="form-subcriber d-flex mail">
+                    <input class="email" type="email" placeholder="Your emaill address" tabindex="0">
+                    <img src="./assests/images/icon-plane.png" class="icon">
+                    <button class="btn" type="submit" tabindex="-1">Subscribe</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm-4 d-none d-xl-block juice">
+            <span class="text-2">
+              <br> <span class="tex">Delivered
+                to</span>
+              <br>
+              your <br>home
+            </span>
+            <br>
+            <button class="shop">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-end">
+      <div class="container">
+        <div class="row info">
+          <div class="col col-lg-4 col-md-6">
+            <div class="card-bg img-1">
+              <div class="text">
+                <span class="info-1">
+                  Everyday Fresh &
+                  <br>Clean with Our</br>
+                  Products
+                </span>
+              </div>
+              <button class="btn-1">Shop now</button>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-md-6">
+            <div class="card-bg img-2">
+              <div class="text">
+                <span class="info-1">
+                  Make your Breakfast
+                  <br>Healthy and Easy</br>
+                </span>
+              </div>
+              <button class="btn-1">Shop now</button>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-md-6 d-none d-xl-block">
+            <div class="card-bg img-3">
+              <div class="text">
+                <span class="info-1">
+                  The best Organic
+                  <br>Products Online</br>
+                </span>
+              </div>
+              <button class="btn-1">Shop now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="popular_section">
+    <div class="product_header">
+      <h3>Popular Products</h3>
+      <ul class="navi">
+        <li class="menu">
+          <button class="icon">All</button>
+        </li>
+        <li class="menu">
+          <button class="icon">Milk & Dairies</button>
+        </li>
+        <li class="menu">
+          <button class="icon">Coffees & Teas</button>
+        </li>
+        <li class="menu">
+          <button class="icon">Pet Foods</button>
+        </li>
+        <li class="menu">
+          <button class="icon">Meats</button>
+        </li>
+        <li class="menu">
+          <button class="icon">Vegetables</button>
+        </li>
+        <li class="menu">
+          <button class="icon">Fruits</button>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="row product">
+        <div class="col col-1-5 col-md-4 col-sm-6">
+          <div class="card">
+            <img src="./assests/images/product-1-1.jpg" class="card-img-top" alt="pro_img">
+          <div class="badge">
+            <span class="bad hot">Hot</span>
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+              <p class="card-text">By 
+                <span class="by-sponsor">
+                  NestFood
+                </span>
+              </p>
+              <div class="product-card-bottom">
+                <div class="product-price">
+                    <span class="new-price">$28.85</span>
+                    <span class="old-price">$32.8</span>
+                </div>
+                <div class="add-cart">
+                    <a class="add" href="shop-cart.html">Add </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-1-5 col-md-4 col-sm-6">
+          <div class="card">
+            <img src="./assests/images/product-2-1.jpg" class="card-img-top" alt="pro_img">
+            <div class="badge">
+              <span class="bad sale">Sale</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">All Natural Italian-Style Chicken Meatballs</h5>
+              <p class="card-text">By 
+                <span class="by-sponsor">
+                  Stouffer
+                </span>
+              </p>
+              <div class="product-card-bottom">
+                <div class="product-price">
+                    <span class="new-price">$52.85</span>
+                    <span class="old-price">$52.8</span>
+                </div>
+                <div class="add-cart">
+                    <a class="add" href="shop-cart.html">Add </a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-1-5 col-md-4 col-sm-6">
+          <div class="card">
+            <img src="./assests/images/product-3-1.jpg" class="card-img-top" alt="pro_img">
+            <div class="badge">
+              <span class="bad new">New</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Angie's Boomchickapop Sweet & Salty Kettle Corn</h5>
+              <p class="card-text">By 
+                <span class="by-sponsor">
+                  StarKist
+                </span>
+              </p>
+              <div class="product-card-bottom">
+                <div class="product-price">
+                    <span class="new-price">$48.85</span>
+                    <span class="old-price">$52.8</span>
+                </div>
+                <div class="add-cart">
+                    <a class="add" href="shop-cart.html">Add </a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-1-5 col-md-4 col-sm-6">
+          <div class="card">
+            <img src="./assests/images/product-4-1.jpg" class="card-img-top" alt="pro_img">
+            <div class="card-body">
+              <h5 class="card-title">Foster Farms Takeout Crispy Classic Buffalo Wings</h5>
+              <p class="card-text">By 
+                <span class="by-sponsor">
+                  NestFood
+                </span>
+              </p>
+              <div class="product-card-bottom">
+                <div class="product-price">
+                    <span class="new-price">$17.85</span>
+                    <span class="old-price">$19.8</span>
+                </div>
+                <div class="add-cart">
+                    <a class="add" href="shop-cart.html">Add </a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-1-5 col-md-4 col-sm-6">
+          <div class="card">
+            <img src="./assests/images/product-5-1.jpg" class="card-img-top" alt="pro_img">
+            <div class="badge">
+              <span class="bad num">-14%</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Blue Diamond Almonds Lightly Salted Vegetables</h5>
+              <p class="card-text">By 
+                <span class="by-sponsor">
+                  NestFood
+                </span>
+              </p>
+              <div class="product-card-bottom">
+                <div class="product-price">
+                    <span class="new-price">$23.85</span>
+                    <span class="old-price">$25.8</span>
+                </div>
+                <div class="add-cart">
+                    <a class="add" href="shop-cart.html">Add </a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-1-5 col-md-4 col-sm-6">
+          <div class="card">
+            <img src="./assests/images/product-6-1.jpg" class="card-img-top" alt="pro_img">
+            <div class="card-body">
+              <h5 class="card-title">Chobani Complete Vanilla Greek Yogurt</h5>
+              <p class="card-text">By 
+                <span class="by-sponsor">
+                  NestFood
+                </span>
+              </p>
+              <div class="product-card-bottom">
+                <div class="product-price">
+                    <span class="new-price">$54.85</span>
+                    <span class="old-price">$55.8</span>
+                </div>
+                <div class="add-cart">
+                    <a class="add" href="shop-cart.html">Add </a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-1-5 col-md-4 col-sm-6">
+          <div class="card">
+            <img src="./assests/images/product-7-1.jpg" class="card-img-top" alt="pro_img">
+            <div class="card-body">
+              <h5 class="card-title">Canada Dry Ginger Ale - 2 L Bottle - 200ml - 400g</h5>
+              <p class="card-text">By 
+                <span class="by-sponsor">
+                  NestFood
+                </span>
+              </p>
+              <div class="product-card-bottom">
+                <div class="product-price">
+                    <span class="new-price">$32.85</span>
+                    <span class="old-price">$33.8</span>
+                </div>
+                <div class="add-cart">
+                    <a class="add" href="shop-cart.html">Add </a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-1-5 col-md-4 col-sm-6">
+          <div class="card">
+            <img src="./assests/images/product-8-1.jpg" class="card-img-top" alt="pro_img">
+            <div class="badge">
+              <span class="bad hot">Hot</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Encore Seafoods Stuffed Alaskan Salmon</h5>
+              <p class="card-text">By 
+                <span class="by-sponsor">
+                  NestFood
+                </span>
+              </p>
+              <div class="product-card-bottom">
+                <div class="product-price">
+                    <span class="new-price">$35.85</span>
+                    <span class="old-price">$37.8</span>
+                </div>
+                <div class="add-cart">
+                    <a class="add" href="shop-cart.html">Add </a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-1-5 col-md-4 col-sm-6">
+          <div class="card">
+            <img src="./assests/images/product-9-1.jpg" class="card-img-top" alt="pro_img">
+            <div class="badge">
+              <span class="bad sale">Sale</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Gorton’s Beer Battered Fish Fillets with soft paper</h5>
+              <p class="card-text">By 
+                <span class="by-sponsor">
+                  Old El Paso
+                </span>
+              </p>
+              <div class="product-card-bottom">
+                <div class="product-price">
+                    <span class="new-price">$23.85</span>
+                    <span class="old-price">$25.8</span>
+                </div>
+                <div class="add-cart">
+                    <a class="add" href="shop-cart.html">Add </a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-1-5 col-md-4 col-sm-6 d-none d-xl-block">
+          <div class="card">
+            <img src="./assests/images/product-10-1.jpg" class="card-img-top" alt="pro_img">
+            <div class="card-body">
+              <h5 class="card-title">Haagen-Dazs Caramel Cone Ice Cream Ketchup</h5>
+              <p class="card-text">By 
+                <span class="by-sponsor">
+                  Tyson
+                </span>
+              </p>
+              <div class="product-card-bottom">
+                <div class="product-price">
+                    <span class="new-price">$22.85</span>
+                    <span class="old-price">$24.8</span>
+                </div>
+                <div class="add-cart">
+                    <a class="add" href="shop-cart.html">Add </a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="best_sells_section">
+    <div class="sells_header">
+      <h3>Daily Best Sells</h3>
+      <ul class="navi">
+        <li class="menu">
+          <button class="icon green">Featured</button>
+        </li>
+        <li class="menu">
+          <button class="icon">Popular</button>
+        </li>
+        <li class="menu">
+          <button class="icon">Newly added</button>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-3 d-none d-lg-flex nature">
+          <h2 class="title">Bring Nature into your home</h2>
+        </div>
+        <div class="col col-lg-9 col-md-12">
+          <div class="owl-carousel owl-theme image-slider1">
+            <div class="item">
+              <div class="card">
+                <img src="./assests/images/product-1-1.jpg" class="card-img-top" alt="pro_img">
+                <div class="badge">
+                  <span class="bad save">Save 15%</span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                  <p class="card-text">By 
+                    <span class="by-sponsor">
+                      NestFood
+                    </span>
+                  </p>
+                  <div class="product-card-bottom">
+                    <div class="product-price">
+                        <span class="new-price">$28.85</span>
+                        <span class="old-price">$32.8</span>
+                    </div>
+                    <div class="add-cart">
+                        <a class="add" href="shop-cart.html">Add </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img src="./assests/images/product-2-1.jpg" class="card-img-top" alt="pro_img">
+                <div class="badge">
+                  <span class="bad save1">Save 35%</span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">All Natural Italian-Style Chicken Meatballs</h5>
+                  <p class="card-text">By 
+                    <span class="by-sponsor">
+                      Stouffer
+                    </span>
+                  </p>
+                  <div class="product-card-bottom">
+                    <div class="product-price">
+                        <span class="new-price">$52.85</span>
+                        <span class="old-price">$52.8</span>
+                    </div>
+                    <div class="add-cart">
+                        <a class="add" href="shop-cart.html">Add </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+             <div class="item">
+              <div class="card">
+                <img src="./assests/images/product-3-1.jpg" class="card-img-top" alt="pro_img">
+                <div class="badge">
+                  <span class="bad sale">Sale</span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Angie's Boomchickapop Sweet & Salty Kettle Corn</h5>
+                  <p class="card-text">By 
+                    <span class="by-sponsor">
+                      StarKist
+                    </span>
+                  </p>
+                  <div class="product-card-bottom">
+                    <div class="product-price">
+                        <span class="new-price">$48.85</span>
+                        <span class="old-price">$52.8</span>
+                    </div>
+                    <div class="add-cart">
+                        <a class="add" href="shop-cart.html">Add </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+             <div class="item">
+              <div class="card">
+                <img src="./assests/images/product-4-1.jpg" class="card-img-top" alt="pro_img">
+                <div class="badge">
+                  <span class="bad best">Best sale</span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Foster Farms Takeout Crispy Classic Buffalo Wings</h5>
+                  <p class="card-text">By 
+                    <span class="by-sponsor">
+                      NestFood
+                    </span>
+                  </p>
+                  <div class="product-card-bottom">
+                    <div class="product-price">
+                        <span class="new-price">$17.85</span>
+                        <span class="old-price">$19.8</span>
+                    </div>
+                    <div class="add-cart">
+                        <a class="add" href="shop-cart.html">Add </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+             <div class="item">
+              <div class="card">
+                <img src="./assests/images/product-5-1.jpg" class="card-img-top" alt="pro_img">
+                <div class="badge">
+                  <span class="bad save">Save 15%</span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Blue Diamond Almonds Lightly Salted Vegetables</h5>
+                  <p class="card-text">By 
+                    <span class="by-sponsor">
+                      NestFood
+                    </span>
+                  </p>
+                  <div class="product-card-bottom">
+                    <div class="product-price">
+                        <span class="new-price">$23.85</span>
+                        <span class="old-price">$25.8</span>
+                    </div>
+                    <div class="add-cart">
+                        <a class="add" href="shop-cart.html">Add </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="deals_section">
+    <div class="deals_header">
+      <h3>Deals of the day</h3>
+      <ul class="navi">
+        <li class="menu">
+          <button class="icon green">All deals</button>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="row ">
+        <div class="col-xl-3 col-lg-4 col-md-6 product">
+          <div class="card">
+            <div class="product-img">
+              <img class="deco" src="./assests/images/banner-5.png">
+            </div>
+            <div class="product-content-wrap">
+              
+              <div class="card-body">
+                <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                <p class="card-text">By 
+                  <span class="by-sponsor">
+                    NestFood
+                  </span>
+                </p>
+                <div class="product-card-bottom">
+                  <div class="product-price">
+                      <span class="new-price">$28.85</span>
+                      <span class="old-price">$32.8</span>
+                  </div>
+                  <div class="add-cart">
+                      <a class="add" href="shop-cart.html">Add </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+        
+        <div class="col-xl-3 col-lg-4 col-md-6 product">
+          <div class="card">
+            <div class="product-img">
+              <img class="deco" src="./assests/images/banner-6.png">
+            </div>
+            <div class="product-content-wrap">
+              
+              <div class="card-body">
+                <h5 class="card-title">Perdue Simply Smart Organics Gluten Free</h5>
+                <p class="card-text">By 
+                  <span class="by-sponsor">
+                    Old El Paso
+                  </span>
+                </p>
+                <div class="product-card-bottom">
+                  <div class="product-price">
+                      <span class="new-price">$24.85</span>
+                      <span class="old-price">$26.8</span>
+                  </div>
+                  <div class="add-cart">
+                      <a class="add" href="shop-cart.html">Add </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+        
+        <div class="col-xl-3 col-lg-4 col-md-6 d-none d-lg-block product">
+          <div class="box">
+            <div class="card">
+            <div class="product-img">
+            <img class="deco" src="./assests/images/banner-7.png">
+          </div>
+          <div class="product-content-wrap">
+              
+            <div class="card-body">
+              <h5 class="card-title">Signature Wood-Fired Mushroom and Caramelized</h5>
+              <p class="card-text">By 
+                <span class="by-sponsor">
+                  Progresso
+                </span>
+              </p>
+              <div class="product-card-bottom">
+                <div class="product-price">
+                    <span class="new-price">$12.85</span>
+                    <span class="old-price">$13.8</span>
+                </div>
+                <div class="add-cart">
+                    <a class="add" href="shop-cart.html">Add </a>
+                </div>
+              </div>
+            </div>
+        </div>
+          </div>
+          </div>
+        </div>
+        
+        <div class="col-xl-3 col-lg-4 col-md-6 d-none d-lg-block product">
+          <div class="box">
+            <div class="card">
+            <div class="product-img">
+            <img class="deco" src="./assests/images/banner-8.png">
+          </div>
+          <div class="product-content-wrap">
+              
+            <div class="card-body">
+              <h5 class="card-title">Simply Lemonade with Raspberry Juice</h5>
+              <p class="card-text">By 
+                <span class="by-sponsor">
+                  Yoplait
+                </span>
+              </p>
+              <div class="product-card-bottom">
+                <div class="product-price">
+                    <span class="new-price">$15.85</span>
+                    <span class="old-price">$16.8</span>
+                </div>
+                <div class="add-cart">
+                    <a class="add" href="shop-cart.html">Add </a>
+                </div>
+              </div>
+            </div>
+        </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="product_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-lg-3 col-md-6">
+          <h4 class="title">
+            Top Selling
+            <span class="line"></span>
+          </h4>
+          <div class="product_list">
+            <article class="row content">
+              <figure class="col col-md-4">
+                <img class="pro" src="./assests/images/thumbnail-1.jpg" alt="..">
+              </figure>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Nestle Original Coffee-Mate Coffee Creamer
+                </h6>
+                <div class="product-price">
+                  <span class="new-price">$32.85</span>
+                  <span class="old-price">$33.8</span>
+              </div>
+              </div>
+            </article>
+          </div>
+          <div class="product_list">
+            <article class="row content">
+              <figure class="col col-md-4">
+                <img class="pro" src="./assests/images/thumbnail-2.jpg" alt="..">
+              </figure>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Nestle Original Coffee-Mate Coffee Creamer
+                </h6>
+                <div class="product-price">
+                  <span class="new-price">$32.85</span>
+                  <span class="old-price">$33.8</span>
+              </div>
+              </div>
+            </article>
+          </div>
+          <div class="product_list">
+            <article class="row content">
+              <figure class="col col-md-4">
+                <img class="pro" src="./assests/images/thumbnail-3.jpg" alt="..">
+              </figure>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Nestle Original Coffee-Mate Coffee Creamer
+                </h6>
+                <div class="product-price">
+                  <span class="new-price">$32.85</span>
+                  <span class="old-price">$33.8</span>
+              </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        
+        <div class="col-xs-12 col-lg-3 col-md-6">
+          <h4 class="title">
+            Trending Products
+          <span class="line"></span>
+          </h4>
+          <div class="product_list">
+            <article class="row content">
+              <figure class="col col-md-4">
+                <img class="pro" src="./assests/images/thumbnail-4.jpg" alt="..">
+              </figure>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Organic Cage-Free Grade A Large Brown Eggs
+                </h6>
+                <div class="product-price">
+                  <span class="new-price">$32.85</span>
+                  <span class="old-price">$33.8</span>
+              </div>
+              </div>
+            </article>
+          </div>
+          <div class="product_list">
+            <article class="row content">
+              <figure class="col col-md-4">
+                <img class="pro" src="./assests/images/thumbnail-5.jpg" alt="..">
+              </figure>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Seeds of Change Organic Quinoa, Brown, & Red Rice
+                </h6>
+                <div class="product-price">
+                  <span class="new-price">$32.85</span>
+                  <span class="old-price">$33.8</span>
+              </div>
+              </div>
+            </article>
+          </div>
+          <div class="product_list">
+            <article class="row content">
+              <figure class="col col-md-4">
+                <img class="pro" src="./assests/images/thumbnail-6.jpg" alt="..">
+              </figure>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Naturally Flavored Cinnamon Vanilla Light Roast Coffee
+                </h6>
+                <div class="product-price">
+                  <span class="new-price">$32.85</span>
+                  <span class="old-price">$33.8</span>
+              </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        
+        <div class="col-xs-12 col-lg-3 col-md-6 d-none d-lg-block">
+          <h4 class="title">
+            Recently added
+          <span class="line"></span>
+          </h4>
+          <div class="product_list">
+            <article class="row content">
+              <figure class="col col-md-4">
+                <img class="pro" src="./assests/images/thumbnail-7.jpg" alt="..">
+              </figure>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Pepperidge Farm Farmhouse Hearty White Bread
+                </h6>
+                <div class="product-price">
+                  <span class="new-price">$32.85</span>
+                  <span class="old-price">$33.8</span>
+              </div>
+              </div>
+            </article>
+          </div>
+          <div class="product_list">
+            <article class="row content">
+              <figure class="col col-md-4">
+                <img class="pro" src="./assests/images/thumbnail-8.jpg" alt="..">
+              </figure>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Organic Frozen Triple Berry Blend
+                </h6>
+                <div class="product-price">
+                  <span class="new-price">$32.85</span>
+                  <span class="old-price">$33.8</span>
+              </div>
+              </div>
+            </article>
+          </div>
+          <div class="product_list">
+            <article class="row content">
+              <figure class="col col-md-4">
+                <img class="pro" src="./assests/images/thumbnail-9.jpg" alt="..">
+              </figure>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Oroweat Country Buttermilk Bread
+                </h6>
+                <div class="product-price">
+                  <span class="new-price">$32.85</span>
+                  <span class="old-price">$33.8</span>
+              </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        
+        <div class="col-xs-12 col-lg-3 col-md-6 d-none d-lg-block">
+          <h4 class="title">
+            Top Rated
+          <span class="line"></span>
+          </h4>
+          <div class="product_list">
+            <article class="row content">
+              <figure class="col col-md-4">
+                <img class="pro" src="./assests/images/thumbnail-10.jpg" alt="..">
+              </figure>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Foster Farms Takeout Crispy Classic Buffalo Wings
+                </h6>
+                <div class="product-price">
+                  <span class="new-price">$32.85</span>
+                  <span class="old-price">$33.8</span>
+              </div>
+              </div>
+            </article>
+          </div>
+          <div class="product_list">
+            <article class="row content">
+              <figure class="col col-md-4">
+                <img class="pro" src="./assests/images/thumbnail-11.jpg" alt="..">
+              </figure>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Foster Farms Takeout Crispy Classic Buffalo Wings
+                </h6>
+                <div class="product-price">
+                  <span class="new-price">$32.85</span>
+                  <span class="old-price">$33.8</span>
+              </div>
+              </div>
+            </article>
+          </div>
+          <div class="product_list">
+            <article class="row content">
+              <figure class="col col-md-4">
+                <img class="pro" src="./assests/images/thumbnail-1.jpg" alt="..">
+              </figure>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  All Natural Italian-Style Chicken Meatballs
+                </h6>
+                <div class="product-price">
+                  <span class="new-price">$32.85</span>
+                  <span class="old-price">$33.8</span>
+              </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="Categories_section">
+    <div class="category_header">
+      <h3>Shop by Categories</h3>
+      <ul class="navi">
+        <li class="menu">
+          <button class="icon green">
+            All Categories
+            </button>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="owl-carousel owl-theme image-slider2">
+        <div class="item">
+          <div class="card">
+            <img class="cate" src="./assests/images/category-1.png" alt="SD">
+            <div class="card-body">
+              <h5 class="card-title">Pet Foods & Toys</h5>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+         <div class="card">
+            <img class="cate" src="./assests/images/category-2.png" alt="SD">
+            <div class="card-body">
+              <h5 class="card-title">Packaged Fast Foods</h5>
+            </div>
+          </div>
+        </div>
+         <div class="item">
+          <div class="card">
+            <img class="cate" src="./assests/images/category-3.png" alt="SD">
+            <div class="card-body">
+              <h5 class="card-title">Baking material</h5>
+            </div>
+          </div>
+        </div>
+         <div class="item">
+           <div class="card">
+            <img class="cate" src="./assests/images/category-4.png" alt="SD">
+            <div class="card-body">
+              <h5 class="card-title">Vegetables & tubers</h5>
+            </div>
+          </div>
+        </div>
+         <div class="item">
+           <div class="card">
+            <img class="cate" src="./assests/images/category-5.png" alt="SD">
+            <div class="card-body">
+              <h5 class="card-title">Fresh seafoods</h5>
+            </div>
+          </div>
+        </div>
+         <div class="item">
+          <div class="card">
+            <img class="cate" src="./assests/images/category-6.png" alt="SD">
+            <div class="card-body">
+              <h5 class="card-title">Noodles rice</h5>
+            </div>
+          </div>
+        </div>
+         <div class="item">
+           <div class="card">
+            <img class="cate" src="./assests/images/category-7.png" alt="SD">
+            <div class="card-body">
+              <h5 class="card-title">Fastfood</h5>
+            </div>
+          </div>
+        </div>
+         <div class="item">
+          <div class="card">
+            <img class="cate" src="./assests/images/category-8.png" alt="SD">
+            <div class="card-body">
+              <h5 class="card-title">Icecream</h5>
+            </div>
+          </div>
+        </div>
+         <div class="item">
+          <div class="card">
+            <img class="cate" src="./assests/images/category-9.png" alt="SD">
+            <div class="card-body">
+              <h5 class="card-title">Milk & Dairy</h5>
+            </div>
+          </div>
+        </div>
+         <div class="item">
+        <div class="card">
+            <img class="cate" src="./assests/images/category-10.png" alt="SD">
+            <div class="card-body">
+              <h5 class="card-title">Wine and alcohol</h5>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <img class="cate" src="./assests/images/category-11.png" alt="SD">
+            <div class="card-body">
+              <h5 class="card-title">Clothing & Beauty</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="newsletter_section">
+    <div class="container">
+      <div class="newsletter">
+        <div class="newsletter_content">
+          <span class="text">
+            
+            Stay home & get your daily  <br>
+            needs from our shop
+          </br>
+          </span>
+          <span class="text-1">
+            Start You'r Daily Shopping with 
+          </span>
+          <form class="form-subcriber d-flex mail">
+            <input class="email" type="email" placeholder="Your emaill address" tabindex="0">
+            <img src="./assests/images/icon-plane.png" class="icon">
+            <button class="btn" type="submit" tabindex="0">Subscribe</button>
+          </form>
+        </div>
+        <img class="man" src="./assests/images/banner-9.png">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col col-1-5 col-md-4 col-sm-6">
+          <div class="product_list">
+            <article class="row content">
+              <div class="col col-md-4 pad">
+                <img class="pro" src="./assests/images/icon-1.png" alt="..">
+              </div>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Best prices & offers
+                </h6>
+                <span class="text1">Orders $50 or more</span>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="col col-1-5 col-md-4 col-sm-6">
+          <div class="product_list">
+            <article class="row content">
+              <div class="col col-md-4 pad">
+                <img class="pro" src="./assests/images/icon-2.png" alt="..">
+              </div>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Free delivery
+                </h6>
+                <span class="text1">24/7 amazing services</span>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="col col-1-5 col-md-4 col-sm-6">
+          <div class="product_list">
+            <article class="row content">
+              <div class="col col-md-4 pad">
+                <img class="pro" src="./assests/images/icon-3.png" alt="..">
+              </div>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Great daily deal
+                </h6>
+                <span class="text1">When you sign up</span>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="col col-1-5 col-md-4 col-sm-6">
+          <div class="product_list">
+            <article class="row content">
+              <div class="col col-md-4 pad">
+                <img class="pro" src="./assests/images/icon-4.png" alt="..">
+              </div>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Wide assortment
+                </h6>
+                <span class="text1">Mega Discounts</span>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="col col-1-5 col-md-4 col-sm-6">
+          <div class="product_list">
+            <article class="row content">
+              <div class="col col-md-4 pad">
+                <img class="pro" src="./assests/images/icon-5.png" alt="..">
+              </div>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Easy returns
+                </h6>
+                <span class="text1">Within 30 days</span>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="col col-1-5 col-md-4 col-sm-6 d-xl-none">
+          <div class="product_list">
+            <article class="row content">
+              <div class="col col-md-4 pad">
+                <img class="pro" src="./assests/images/icon-6.png" alt="..">
+              </div>
+              <div class="col col-md-8">
+                <h6 class="name">
+                  Safe Delivery
+                </h6>
+                <span class="text1">Within 30 days</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-lg-3 col-md-6">
+          <div>
+            <img class="mylogo" src="./assests/images/nest logo.png" alt="SD">
+            <p class="heading">Awesome grocery store website template</p>
+          </div>
+          <ul class="navi">
+            <li class="menu">
+              <span class="tex">Address:</span>
+              <span class="icon">5171 W Campbell Ave undefined Kent, Utah 53127 United States</span>
+            </li>
+            <li class="menu">
+              <span class="tex">Call Us:</span>
+              <span class="icon">(+91) - 540-025-124553</span>
+            </li>
+            <li class="menu">
+              <span class="tex">Email:</span>
+              <span class="icon">sale@Nest.com</span>
+            </li>
+            <li class="menu">
+              <span class="tex">Hours:</span>
+              <span class="icon">10:00 - 18:00, Mon - Sat</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-lg-3 col-md-6">
+          <h4 class="title">Company</h4>
+          <ul class="navi">
+            <li class="menu top">
+              <button class="icon">About Us</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Delivery Information</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Privacy Policy</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Terms & condition</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Contact Us</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Support Center</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Fruits</button>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-lg-3 col-md-6">
+          <h4 class="title">Account</h4>
+          <ul class="navi">
+            <li class="menu top">
+              <button class="icon">Sign in</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">View Cart</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">My whislist</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Track My Order</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Help Ticket</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Shipping Details</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Compare Products</button>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-lg-3 col-md-6">
+          <h4 class="title">Corporate</h4>
+          <ul class="navi">
+            <li class="menu top">
+              <button class="icon">Become a Vendor</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Affiliate Program</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Farm Business</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Farm Careers</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Our Supplies</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Accessibility</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Promotions</button>
+            </li>
+          </ul>
+        </div>
+        <div class="col col-xs-12 col-sm-6">
+          <h4 class="title">Popular</h4>
+          <ul class="navi">
+            <li class="menu top">
+              <button class="icon">Milk & Flavoured Milk</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Butter and Margarine</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Eggs Substitutes</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Marmalades</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Sour Cream and Dips</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Tea & Kombucha</button>
+            </li>
+            <li class="menu top">
+              <button class="icon">Cheese</button>
+            </li>
+          </ul>
+        </div>
+        <div class="col col-xs-12 col-sm-3">
+          <h4 class="title">Install App</h4>
+          <p class="heading">From App Store or Google Play</p>
+          <div class="download">
+              <div class="row">
+                <div class="col col-xs-12 col-sm-6">
+                  <img class="src1 top" src="./assests/images/app-store.jpg">
+                </div>
+                <div class="col col-xs-12 col-sm-6">
+                  <img class="src1 top" src="./assests/images/google-play.jpg">
+                </div>
+              </div>
+          </div>
+          <p class="heading">Secured Payment Gateways</p>
+            <img class="src1 top" src="./assests/images/payment-method.png">
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row space">
+          
+          <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <p class="info si1 green">© 2022, 
+              <strong class="text-brand">Nest</strong>
+               - HTML Ecommerce Template <br>
+               All rights reserved
+            </p>
+          </div>
+          
+          <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 d-none d-xl-block">
+            <p class="info si2">1900 - 6666 
+              <br>
+              <span class="green">Working 8:00 - 22:00</span>
+            </p>
+            <p class="info si2">1900 - 8888 
+              <br>
+              <span class="green">24/7 Support Center</span>
+            </p>
+          </div>
+          
+          <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 d-none d-xl-block">
+            <p class="info si3">Follow Us 
+              <br>
+              <span class="green">Up to 15% discount on your first subscribe</span></p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js">
+    </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+       </script>    
+       <script src="./index.js"></script>
+</body>
+
+</html>
